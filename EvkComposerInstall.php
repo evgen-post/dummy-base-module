@@ -34,7 +34,7 @@ class EvkComposerInstall
     {
         $dir = rtrim($dir, '/');
         $files = array_filter(scandir($dir), function ($dir){
-            return !in_array($dir, ['.','..','.git','EvkComposerInstall.php','composer.json']);
+            return !in_array($dir, ['.','..','.git','EvkComposerInstall.php','composer.json','vendor']);
         });
         if (!empty($files)) {
             foreach ($files as $file) {
