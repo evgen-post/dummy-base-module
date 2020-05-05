@@ -1,0 +1,27 @@
+{
+  "name": "evk/dummy-bx-base-module",
+  "description": "Dummy bitrix base module",
+  "type": "bitrix-module",
+  "keywords": [
+    "bitrix",
+    "module",
+    "base"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1"
+  },
+  "scripts": {
+    "pre-install-bitrix-module": [
+      "php DsComposerInstall.php",
+      "rm DsComposerInstall.php",
+      "rm composer.json",
+      "rm composer.lock",
+      "rm -rf vendor",
+      "rm -rf .git"
+    ],
+    "post-create-project-cmd": [
+      "@pre-install-bitrix-module"
+    ]
+  }
+}
