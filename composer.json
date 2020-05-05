@@ -13,12 +13,7 @@
   },
   "scripts": {
     "pre-install-bitrix-module": [
-      "php EvkComposerInstall.php",
-      "rm EvkComposerInstall.php",
-      "rm composer.json",
-      "rm composer.lock",
-      "rm -rf vendor",
-      "rm -rf .git"
+      "php EvkComposerInstall.php"
     ],
     "post-create-project-cmd": [
       "@pre-install-bitrix-module"
