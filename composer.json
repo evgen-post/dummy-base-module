@@ -16,6 +16,8 @@
       "php EvkComposerInstall.php",
       "rm EvkComposerInstall.php",
       "rm composer.json",
+      "rm composer.lock",
+      "rm -rf vendor",
       "rm -rf .git"
     ],
     "post-create-project-cmd": [
