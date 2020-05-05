@@ -1,5 +1,5 @@
 <?php
-$MESS['DS_BASE_MODULE_NAME'] = 'Модуль проекта';
-$MESS['DS_BASE_MODULE_DESCRIPTION'] = 'Модуль проекта';
-$MESS['DS_BASE_PARTNER_NAME'] = 'Владелец проекта';
-$MESS['DS_BASE_PARTNER_URI'] = '';
+$MESS['#TEMPLATE_MODULE_LOC_KEY#_MODULE_NAME'] = 'Модуль проекта';
+$MESS['#TEMPLATE_MODULE_LOC_KEY#_MODULE_DESCRIPTION'] = 'Модуль проекта';
+$MESS['#TEMPLATE_MODULE_LOC_KEY#_PARTNER_NAME'] = 'Владелец проекта';
+$MESS['#TEMPLATE_MODULE_LOC_KEY#_PARTNER_URI'] = '';

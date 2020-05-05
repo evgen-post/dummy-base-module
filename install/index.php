@@ -3,11 +3,11 @@ use Bitrix\Main\Localization\Loc;
 
 Loc::loadLanguageFile(__FILE__);
 /**
- * Class ds_base
+ * Class #TEMPLATE_MODULE_CLASS_NAME#
  */
-class ds_base extends CModule
+class #TEMPLATE_MODULE_CLASS_NAME# extends CModule
 {
-    public $MODULE_ID = "ds.base";
+    public $MODULE_ID = "#TEMPLATE_MODULE_ID#";
 
     public $MODULE_NAME;
     public $MODULE_VERSION;
@@ -19,7 +19,7 @@ class ds_base extends CModule
     public $MODULE_GROUP_RIGHTS = 'Y';
 
     /**
-     * ds_base constructor.
+     * #TEMPLATE_MODULE_CLASS_NAME# constructor.
      */
     public function __construct()
     {
@@ -29,10 +29,10 @@ class ds_base extends CModule
         include(__DIR__ . '/version.php');
         $this->MODULE_VERSION = $arModuleVersion['VERSION'];
         $this->MODULE_VERSION_DATE = $arModuleVersion['VERSION_DATE'];
-        $this->MODULE_NAME = Loc::getMessage('DS_BASE_MODULE_NAME');
-        $this->MODULE_DESCRIPTION = Loc::getMessage('DS_BASE_MODULE_DESCRIPTION');
-        $this->PARTNER_NAME = Loc::getMessage('DS_BASE_PARTNER_NAME');
-        $this->PARTNER_URI = Loc::getMessage('DS_BASE_PARTNER_URI');
+        $this->MODULE_NAME = Loc::getMessage('#TEMPLATE_MODULE_LOC_KEY#_MODULE_NAME');
+        $this->MODULE_DESCRIPTION = Loc::getMessage('#TEMPLATE_MODULE_LOC_KEY#_MODULE_DESCRIPTION');
+        $this->PARTNER_NAME = Loc::getMessage('#TEMPLATE_MODULE_LOC_KEY#_PARTNER_NAME');
+        $this->PARTNER_URI = Loc::getMessage('#TEMPLATE_MODULE_LOC_KEY#_PARTNER_URI');
     }
 
     /**
