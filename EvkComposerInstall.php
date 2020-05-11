@@ -54,16 +54,14 @@ class EvkComposerInstall
     protected function replaceInFile($file)
     {
         file_put_contents($file, str_replace([
-            '#TEMPLATE_MODULE_LOC_KEY#',
-            '#TEMPLATE_MODULE_CLASS_NAME#',
-            '#TEMPLATE_MODULE_VERSION_DATE#',
-            '#TEMPLATE_MODULE_VERSION#',
-            '#TEMPLATE_MODULE_ID#',
+            'DS_BASE_',
+            ' ds_base',
+            '2020-01-01 00:00:00',
+            'ds.base',
         ], [
-            strtoupper($this->moduleClassName),
-            $this->moduleClassName,
+            strtoupper($this->moduleClassName).'_',
+            ' '.$this->moduleClassName,
             date('Y-m-d H:i:s'),
-            '1.0.0',
             $this->moduleDirName,
         ], file_get_contents($file)));
     }
