@@ -7,7 +7,7 @@ use Ds\Base\Base\Singleton;
  * Class Helper
  * @package Ds\Base\Helpers
  */
-class HlHelper extends Singleton
+class D7Helper extends Singleton
 {
 
 }

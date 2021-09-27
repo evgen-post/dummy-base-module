@@ -18,10 +18,10 @@ class Helper extends Singleton
     }
 
     /**
-     * @return HlHelper
+     * @return D7Helper
      */
-    public function hl()
+    public function d7()
     {
-        return HlHelper::getInstance();
+        return D7Helper::getInstance();
     }
 }
