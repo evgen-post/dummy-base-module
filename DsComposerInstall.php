@@ -3,7 +3,7 @@
 /**
  * Class EvkComposerInstall
  */
-class EvkComposerInstall
+class DsComposerInstall
 {
     protected $moduleClassName;
     protected $moduleDirPath;
@@ -58,11 +58,13 @@ class EvkComposerInstall
             ' ds_base',
             '2020-01-01 00:00:00',
             'ds.base',
+            ' Ds\Base'
         ], [
             strtoupper($this->moduleClassName).'_',
             ' '.$this->moduleClassName,
             date('Y-m-d H:i:s'),
             $this->moduleDirName,
+            $this->moduleNamespace,
         ], file_get_contents($file)));
     }
     /**
@@ -73,4 +75,4 @@ class EvkComposerInstall
         $this->replaceInDir($this->moduleDirPath);
     }
 }
-new EvkComposerInstall();
+new DsComposerInstall();

@@ -13,8 +13,8 @@
   },
   "scripts": {
     "pre-install-bitrix-module": [
-      "php EvkComposerInstall.php",
-      "rm EvkComposerInstall.php",
+      "php DsComposerInstall.php",
+      "rm DsComposerInstall.php",
       "rm composer.json",
       "rm composer.lock",
       "rm -rf vendor",
