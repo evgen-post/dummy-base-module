@@ -64,7 +64,7 @@ class DsComposerInstall
             ' '.$this->moduleClassName,
             date('Y-m-d H:i:s'),
             $this->moduleDirName,
-            $this->moduleNamespace,
+            ' '.$this->moduleNamespace,
         ], file_get_contents($file)));
     }
     /**

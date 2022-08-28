@@ -7,7 +7,7 @@ namespace Ds\Base\Base;
  */
 class Singleton
 {
-    protected static $instances = [];
+    private static $instances = [];
 
     /**
      * @return static
